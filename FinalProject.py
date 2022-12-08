@@ -169,3 +169,5 @@ if st.button('Predict'):
     st.info(f"Probability that this person uses linkedin: {round (probs[0][1], 2)}")
 
 st.image("https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg")
+
+##
