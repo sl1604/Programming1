@@ -164,9 +164,12 @@ if st.button('Predict'):
 
     probs = lr.predict_proba(answer_data)
 
-    st.info(f"Predicted class: {predicted_class[0]}")
-    st.text(f"0 = not LinkedIn, 1 = LinkedIn User")
-    st.info(f"Probability that this person uses linkedin: {round (probs[0][1], 2)}")
+    if predicted_class == 0:
+        print(st.info(f"We predict that you are not a LinkedIn User!"))
+    else:
+        print(st.info(f"We predict that you are a LinkedIn User!"))
+
+    st.info(f"The probability that you use LinkedIn is predicted at: {round (probs[0][1], 2)}")
 
 st.image("https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg")
 
