@@ -173,4 +173,5 @@ if st.button('Predict'):
 
 st.image("https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg")
 
+st.info(f"Kudos to Abhishek Dutt and Ryan Ripper for their help with this tool.")
 ##
