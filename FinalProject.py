@@ -40,7 +40,7 @@ x_train, x_test, y_train, y_test = train_test_split(x,
                                                    test_size=0.2,
                                                    random_state=123)
 
-lr=LogisticRegression()
+lr=LogisticRegression(class_weight = "balanced")
 lr.fit(x_train, y_train)
 y_pred = lr.predict(x_test)
 
